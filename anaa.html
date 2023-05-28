@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Howling Hunt</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!--<link  rel="icon"   href="./assets/images/favicon/favicon.png" type="image/png"/>-->
+</head>
+<body>
+    <!-- HOME BUTTON -->
+    <div class="nav-buttons">
+        <button id="home-button" class="display-on" onclick="window.location.href='http://127.0.0.1:5503/index.html' ">
+            <img id="home-img" src="./assets/images/screens/home-button.png" alt="Home">
+        </button>
+    
+        <!-- SOUND BUTTON -->
+        <button id="sound-button" class="display-on">
+            <img id="sound-img" src="./assets/images/game-ui/sound.png" alt="Sound">
+        </button>
+    </div>
+
+    <div class="canvas-container">
+
+        <!-- CANVAS -->
+        <canvas id="canvas" class="display-on" width="1600" height="1000"></canvas>
+
+        <img id="movements" src="./assets/images/game-ui/ui-control.png" alt="instrucciones">
+
+
+        <!-- Win Screen -->
+        <div class="win-container">
+            <img id="win-screen" class="display-off" src="./assets/images/screens/win.png" alt="win screen">
+
+            <div class="win-form">
+                <input id="name-input" class="display-off" type="text" placeholder="Write your name" required="">
+                <button id="send-button" class="display-off">
+                    <img src="./assets/images/screens/send-button.png" alt="send form">
+                </button>
+            </div>
+
+        </div>
+
+        <!-- GAME OVER -->
+        <div class="game-over-container">
+<!--             <button id="game-over-button" class="display-off" onclick="window.location.href=' https://howlingpenguins.github.io/howling.io/'">
+                <img id="game-over-img-button" src="./assets/images/screens/restart.png" alt="Home">
+            </button> -->
+        
+            <img id="game-over" class="display-off" src="./assets/images/screens/game.png" alt="">
+        </div>
+    </div>
+
+    <!-- DIPLOMA -->
+    <div class="diplima">
+        <p id="name" class="display-off"></p>
+        <img id="diploma" class="display-off" src="./assets/images/screens/diploma_1.png" alt="diploma">
+    </div>
+
+
+    <!--<img id="top-display" src="./assets/images/game-ui/top-display.png" alt="top display">-->
+
+    <!-- INTRO SCREEN -->
+    <div class="intro-screen">
+        <img id="game-logo" src="./assets/images/screens/Howling.png" alt="game logo">
+       
+        <button id="start-button">
+            <img id="start-img" src="./assets/images/game-ui/start-button.png" alt="Start button">
+        </button>
+    </div>
+
+    <!--<img id="bottom-display" src="./assets/images/game-ui/top-display.png" alt="bottom display">-->
+
+    
+    <script src="./assets/js/constants.js"></script>
+    <script src="./assets/js/models/enemyBullet.js"></script>
+    <script src="./assets/js/models/bullet.js"></script>
+    <script src="./assets/js/models/obstacles.js"></script>
+    <script src="./assets/js/models/enemy.js"></script>
+    <script src="./assets/js/models/potion.js"></script>
+    <script src="./assets/js/models/keyPiece.js"></script>
+    <script src="./assets/js/models/player.js"></script>
+    <script src="./assets/js/models/background.js"></script>
+    <script src="./assets/js/models/game.js"></script>
+    <script src="./assets/js/index.js"></script>
+    
+</body>
+</html>

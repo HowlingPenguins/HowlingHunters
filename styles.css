@@ -1,0 +1,113 @@
+html {
+  box-sizing: border-box;
+}
+
+*,* ::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  width: auto;
+  height: auto;
+  background: rgb(228, 207, 179);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+}
+
+h1 {
+  font-weight: bold;
+  color: black;
+  height: 100px;
+  font-size: 40pt;
+}
+/*table styles*/
+table {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: auto;
+  height: auto;
+  border-spacing: 0px;
+  border-collapse: initial;
+  position: absolute;
+}
+
+div#cover {
+  position: none;
+}
+/*for the moving object*/
+#player {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  display: block;
+  background-color: black;
+  color: black;
+  z-index: 10000;
+}
+
+button {
+  background-color: rgb(244, 244, 221);
+  color: rgb(0, 0, 0);
+  font-size: 25pt;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 10px;
+  border: 2px solid rgb(92, 105, 221);
+  width: 150px;
+  height: 95px;
+}
+/*section which is for end game scenario*/
+section {
+  width: 600px;
+  height: 600px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: rgb(242, 169, 188);
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  color: black;
+  font-size: 15pt;
+  height: 50px;
+}
+
+tr {
+  border: none;
+}
+/*table element styles*/
+td {
+  width: 25px;
+  height: 35px;
+  margin: 0px;
+  border: none;
+  padding: 0px;
+}
+
+#win {
+  color:rgb(148, 205, 224);
+  background-color: rgb(187, 246, 235);
+}
+
+.wall {
+  color:rgb(255, 175, 175);
+  background-color: rgb(255, 175, 175);
+}
+
+.freespace {
+  color:rgb(166, 166, 254);
+  background-color: rgb(121, 121, 235);
+}
+
+#start {
+  color:rgb(187, 241, 247);
+  background-color: rgb(187, 246, 235);
+}
